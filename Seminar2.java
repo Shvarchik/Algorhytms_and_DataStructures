@@ -7,41 +7,13 @@ public class Seminar2 {
 
         int[] arr = ArrayUtils.prepareArray();
         ArrayUtils.printArray(arr);
-        //SortUtils.directSort(arr);
-        //ArrayUtils.printArray(arr);
-
-        // arr = ArrayUtils.prepareArray();
-        // ArrayUtils.printArray(arr);
-        // SortUtils.quickSort(arr);
-        // ArrayUtils.printArray(arr);
-
+        
         //int[] testArray = ArrayUtils.prepareArray(1000);
         
-        // long startTime = System.currentTimeMillis();
-        // SortUtils.directSort(testArray.clone());
-        // long endTime = System.currentTimeMillis();
-        // long processingTime = endTime - startTime;
-        // System.out.printf("Время работы сортировки выбором: %d мс.\n", processingTime);
-
-        // startTime = System.currentTimeMillis();
-        // SortUtils.quickSort(testArray.clone());
-        // endTime = System.currentTimeMillis();
-        // processingTime = endTime - startTime;
-        // System.out.printf("Время работы быстрой сортировки: %d мс.\n", processingTime);
-
-
-        // int[] testArray2 = new int[] {-22, 11, -30, 0, 9, 1, 30, 99};
-        // SortUtils.quickSort(testArray2);
-        // ArrayUtils.printArray(testArray2);
-
         // int res = SearchUtils.binarySearch(testArray2, 11);
         // System.out.printf("Элемент %d %s\n", 11,
         //         res >= 0 ? String.format("найден в массиве по индексу %d", res) : "не найден в массиве");
 
-
-        // int res2 = Arrays.binarySearch(testArray2, 11);
-        // System.out.printf("Элемент %d %s\n", 11,
-        //         res2 >= 0 ? String.format("найден в массиве по индексу %d", res2) : "не найден в массиве");
 
         long startTime = System.currentTimeMillis();
         SortUtils.heapSort(arr);
@@ -51,8 +23,6 @@ public class Seminar2 {
         System.out.printf("Время работы пирамидальной сортировки: %d мс.\n", processingTime);
         
     }
-
-    // c = a >= b ? a : b; 
 
     static class SearchUtils{
 
@@ -87,7 +57,7 @@ public class Seminar2 {
     static class  SortUtils{
 
         /**
-         * O(n^2)
+         * Сортировка выбором   O(n^2)
          * @param array
          */
         static void directSort(int[] array){
@@ -109,7 +79,10 @@ public class Seminar2 {
                 }
             }
         }
-        
+
+        /*
+         * Быстрая сортировка
+         */
         static  void quickSort(int[] array){
             quickSort(array, 0, array.length - 1);
         }
