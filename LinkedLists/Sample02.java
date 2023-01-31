@@ -1,4 +1,4 @@
-﻿package Seminar3;
+﻿package LinkedLists;
 
 public class Sample02 {
     public static void main(String[] args) {
@@ -20,7 +20,7 @@ public class Sample02 {
         e4.setNext(e5);
         e5.setPrev(e4);
 
-        MyLinkedListV2 listV2 = new MyLinkedListV2(e1,e5);
+        MyLinkedListV2 listV2 = new MyLinkedListV2(e1,e2);
 
         listV2.print();
         listV2.revert();

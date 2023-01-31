@@ -1,4 +1,4 @@
-package Seminar3;
+package LinkedLists;
 public class Sample01 {
 
     public static void main(String[] args) {

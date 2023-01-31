@@ -1,4 +1,4 @@
-package Seminar3;
+package LinkedLists;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedList;

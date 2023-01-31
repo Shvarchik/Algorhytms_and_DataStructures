@@ -1,6 +1,6 @@
 ﻿import java.util.Random;
 
-public class Seminar2 {
+public class Arrays_Search_Sorts {
 
     public static void main(String[] args) {
 

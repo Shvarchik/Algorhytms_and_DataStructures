@@ -1,9 +1,19 @@
-package Seminar3;
+package LinkedLists;
 
-public class Node {
+public class NodeV2 {
 
     private int value;
-    private Node next;
+    private NodeV2 next;
+    private NodeV2 prev;
+
+
+    public NodeV2 getPrev() {
+        return prev;
+    }
+
+    public void setPrev(NodeV2 prev) {
+        this.prev = prev;
+    }
 
     public int getValue() {
         return value;
@@ -13,20 +23,15 @@ public class Node {
         this.value = value;
     }
 
-    public Node getNext() {
+    public NodeV2 getNext() {
         return next;
     }
 
-    public void setNext(Node next) {
+    public void setNext(NodeV2 next) {
         this.next = next;
     }
 
-    public Node(int value, Node next) {
-        this.value = value;
-        this.next = next;
-    }
-
-    public Node(int value) {
+    public NodeV2(int value) {
         this.value = value;
     }
 
@@ -34,4 +39,5 @@ public class Node {
     public String toString() {
         return String.format(" %d ", value);
     }
+
 }
